@@ -1,7 +1,15 @@
 #produtos,
-#carrinhos{
+#carrinho{
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+}
+
+img{
+    max-height: 300px;
+}
+.produto-single{
+    width: 33.3%;
+    padding: 0 20px;
 }

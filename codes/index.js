@@ -38,7 +38,17 @@ inicializarLoja = () => {
 inicializarLoja();
 
 atualizarCarrinho = () => {
-    console.log(items);
+    var containerCarrinho = document.getElementById('carrinho');
+    containerCarrinho.innerHTML = "";
+    items.map((val)=>{
+        if(val.quantidade > 0) {
+        containerCarrinho.innerHTML+= `
+        
+        <p>`+val.nome+` | quantidade: `+val.quantidade+`.</p>
+        <hr>
+        `;
+
+    }})
 
 }
 
@@ -51,3 +61,4 @@ for( var i = 0; i < links.length; i++){
         return false;
     })
 }
+
